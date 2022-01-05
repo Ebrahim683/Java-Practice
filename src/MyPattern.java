@@ -3,9 +3,12 @@ public class MyPattern {
     public static void main(String[] args) {
 
         System.out.println();
-        pattern7(5);
+
+        pattern12(5);
+
 
     }
+
 
     static void pattern1(int n) {
         //* * * * *
@@ -142,6 +145,98 @@ public class MyPattern {
             }
             for (int col = 1; col <= totalCol; col++) {
                 System.out.print("* ");
+            }
+            System.out.println();
+        }
+    }
+
+    static void pattern9(int n) {
+        //    *
+        //   * *
+        //  * * *
+        // * * * *
+        //* * * * *
+        //* * * *
+        //* * *
+        //* *
+        //*
+        for (int row = 1; row <= 2 * n - 1; row++) {
+            int totalCol = row > n ? 2 * n - row : row;
+            int spaces = n - row;
+            for (int space = 1; space <= spaces; space++) {
+                System.out.print(" ");
+            }
+            for (int col = 1; col <= totalCol; col++) {
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+    }
+
+    static void pattern10(int n) {
+        //    *
+        //   **
+        //  ***
+        // ****
+        //*****
+        // ****
+        //  ***
+        //   **
+        //    *
+        for (int row = 1; row <= 2 * n - 1; row++) {
+            int totalCol = row > n ? 2 * n - row : row;
+            int spaces = row > n ? row - n : n - row;
+            for (int space = 1; space <= spaces; space++) {
+                System.out.print(" ");
+            }
+            for (int col = 1; col <= totalCol; col++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+
+    static void pattern11(int n) {
+        //* * * * *
+        // * * * *
+        //  * * *
+        //   * *
+        //    *
+        //    *
+        //   * *
+        //  * * *
+        // * * * * 
+        //* * * * *
+        for (int row = 1; row <= 2 * n; row++) {
+            int totalCol = row > n ? row - n : n - row + 1;
+            int spaces = n - totalCol;
+            for (int space = 1; space <= spaces; space++) {
+                System.out.print(" ");
+            }
+            for (int col = 1; col <= totalCol; col++) {
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+    }
+
+    static void pattern12(int n) {
+        //     *
+        //    * *
+        //   *   *
+        //  *     *
+        // *********
+        for (int row = 1; row <= n; row++) {
+            int spaces = n - row + 1;
+            for (int space = 1; space <= spaces; space++) {
+                System.out.print(" ");
+            }
+            for (int col = 1; col <= 2 * row - 1; col++) {
+                if (col == 1 || row == n || col == (2 * row - 1)) {
+                    System.out.print("*");
+                } else {
+                    System.out.print(" ");
+                }
             }
             System.out.println();
         }
