@@ -1,16 +1,13 @@
 public class MyPattern {
 
-    public static void main(String[] args) {
+//    public static void main(String[] args) {
+//
+//        System.out.println();
+//        pattern12(5);
+//
+//    }
 
-        System.out.println();
-
-        pattern12(5);
-
-
-    }
-
-
-    static void pattern1(int n) {
+    public void pattern1(int n) {
         //* * * * *
         //* * * * *
         //* * * * *
@@ -24,7 +21,7 @@ public class MyPattern {
         }
     }
 
-    static void pattern2(int n) {
+    public void pattern2(int n) {
         //*
         //* *
         //* * *
@@ -38,7 +35,7 @@ public class MyPattern {
         }
     }
 
-    static void pattern3(int n) {
+    public void pattern3(int n) {
         //* * * * *
         //* * * *
         //* * *
@@ -52,7 +49,7 @@ public class MyPattern {
         }
     }
 
-    static void pattern4(int n) {
+    public void pattern4(int n) {
         //*
         //* *
         //* * *
@@ -71,7 +68,7 @@ public class MyPattern {
         }
     }
 
-    static void pattern5(int n) {
+    public void pattern5(int n) {
         //* * * * *
         //* * * *
         //* * *
@@ -90,7 +87,7 @@ public class MyPattern {
         }
     }
 
-    static void pattern6(int n) {
+    public void pattern6(int n) {
         //   *
         //  * *
         // * * *
@@ -108,7 +105,7 @@ public class MyPattern {
         }
     }
 
-    static void pattern7(int n) {
+    public void pattern7(int n) {
         //* * * * *
         // * * * *
         //  * * *
@@ -127,7 +124,7 @@ public class MyPattern {
         }
     }
 
-    static void pattern8(int n) {
+    public void pattern8(int n) {
         //    *
         //   * *
         //  * * *
@@ -150,7 +147,7 @@ public class MyPattern {
         }
     }
 
-    static void pattern9(int n) {
+    public void pattern9(int n) {
         //    *
         //   * *
         //  * * *
@@ -173,7 +170,7 @@ public class MyPattern {
         }
     }
 
-    static void pattern10(int n) {
+    public void pattern10(int n) {
         //    *
         //   **
         //  ***
@@ -196,7 +193,7 @@ public class MyPattern {
         }
     }
 
-    static void pattern11(int n) {
+    public void pattern11(int n) {
         //* * * * *
         // * * * *
         //  * * *
@@ -220,7 +217,7 @@ public class MyPattern {
         }
     }
 
-    static void pattern12(int n) {
+    public void pattern12(int n) {
         //     *
         //    * *
         //   *   *
